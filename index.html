@@ -5,76 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lemon Mall</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
+    * {margin:0;padding:0;box-sizing:border-box;}
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #fffef8, #fbeaa6);
+      background: linear-gradient(to bottom, #fffef8, #fffbec);
       color: #333;
       scroll-behavior: smooth;
     }
-
     header {
-      background: url('images/image1.png') center/cover no-repeat;
+      background: linear-gradient(120deg, #ffd700, #fff3b0);
       text-align: center;
-      padding: 100px 20px;
-      color: #fff;
+      padding: 120px 20px 80px;
+      background-image: url('images/image1.png');
+      background-size: cover;
+      background-position: center;
       background-blend-mode: multiply;
-      background-color: rgba(0,0,0,0.4);
+      color: white;
     }
-
     header h1 {
-      font-size: 54px;
-      margin-bottom: 10px;
-      animation: fadeInDown 1s ease-out;
+      font-size: 56px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
     }
-
     header p {
       font-size: 22px;
-      color: #eee;
-      animation: fadeInUp 1.2s ease-out;
+      color: #fff9dc;
+      margin-top: 10px;
     }
-
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 12px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      z-index: 1000;
+    }
+    nav a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #d4af37;
+    }
     section {
       max-width: 1100px;
       margin: 60px auto;
       padding: 0 20px;
       animation: fadeIn 1s ease-in;
     }
-
     section img {
       width: 100%;
-      border-radius: 12px;
-      margin: 30px 0;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      margin: 20px 0;
     }
-
     h2 {
       font-size: 34px;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
       color: #222;
     }
-
     p, ul {
       font-size: 18px;
       line-height: 1.6;
-      color: #444;
+      color: #555;
     }
-
-    ul {
-      padding-left: 20px;
-    }
-
+    ul {padding-left: 20px;}
     .cta, .form-section {
       text-align: center;
       margin: 60px 0;
     }
-
     .cta a, .whatsapp-button {
       background-color: #25D366;
       color: white;
@@ -87,11 +92,9 @@
       display: inline-block;
       margin-top: 20px;
     }
-
     .cta a:hover, .whatsapp-button:hover {
       background-color: #1ebc5b;
     }
-
     .form-section form {
       max-width: 600px;
       margin: 0 auto;
@@ -99,14 +102,12 @@
       flex-direction: column;
       gap: 15px;
     }
-
     .form-section input {
-      padding: 12px;
+      padding: 14px;
       border: 1px solid #ccc;
       border-radius: 6px;
       font-size: 16px;
     }
-
     .form-section button {
       padding: 14px;
       font-size: 16px;
@@ -115,37 +116,31 @@
       border: none;
       border-radius: 8px;
       cursor: pointer;
+      font-weight: bold;
     }
-
     .form-section button:hover {
       background-color: #e4b938;
     }
-
     footer {
-      background: #f5f5f5;
+      background: #333;
+      color: white;
       text-align: center;
-      padding: 30px 20px;
+      padding: 40px 20px;
       font-size: 14px;
-      color: #888;
     }
-
+    footer p {margin-bottom: 10px;}
+    .footer-links a {
+      margin: 0 10px;
+      color: #f5e050;
+      text-decoration: none;
+    }
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
     }
-
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
     @media (max-width: 768px) {
       header h1 { font-size: 36px; }
+      nav {gap: 20px;}
       h2 { font-size: 26px; }
       p, ul { font-size: 16px; }
       .cta a, .form-section button { font-size: 16px; padding: 14px 24px; }
@@ -155,43 +150,48 @@
 <body>
 
 <header>
-  <h1>Welcome to Lemon Mall</h1>
-  <p>Your Gateway to Smart Shopping & Lucrative Partnerships</p>
+  <h1>Lemon Mall</h1>
+  <p>Innovative Marketplace from Asia to the World</p>
 </header>
 
-<section>
-  <h2>What is Lemon Mall?</h2>
-  <p>Lemon Mall is a modern online marketplace offering a wide range of high-quality products directly from manufacturers in China and the CIS region — all at prices below traditional retail.</p>
-  <img src="images/image1.png" alt="Lemon Mall Intro" />
+<nav>
+  <a href="#about">About</a>
+  <a href="#benefits">Benefits</a>
+  <a href="#how">How It Works</a>
+  <a href="#form">Join</a>
+</nav>
+
+<section id="about">
+  <h2>About Lemon Mall</h2>
+  <p>Lemon Mall is a global online marketplace powered by Baishi Health and HUAGE. With 6 factories and over 1,000 products, we deliver luxury goods and daily essentials to your door. Whether it's beauty, wellness, or tech — you’ll find it here.</p>
+  <img src="images/image2.png" alt="About Us" />
 </section>
 
-<section>
-  <h2>Who We Are</h2>
-  <p>We are HUAGE — the official marketing partner of Baishi Health Corporation (China), operating since 2009. With 6 factories and research centers, Baishi Health delivers over 1,000 premium health and lifestyle products worldwide.</p>
-  <img src="images/image2.png" alt="About Baishi Health" />
-</section>
-
-<section>
-  <h2>Why Become a Partner?</h2>
+<section id="benefits">
+  <h2>Why Join Lemon Mall</h2>
   <ul>
-    <li>Earn up to 3% from purchases made through your personal referral link.</li>
-    <li>Open official delivery points as you grow in status.</li>
-    <li>Get shares in Lemon Mall's profits — up to 49% of marketplace revenue is shared with partners.</li>
+    <li>🛍️ Over 1000+ exclusive products</li>
+    <li>💰 Earn commissions up to 3%</li>
+    <li>🏬 Open your own pickup point</li>
+    <li>📈 Get shares of the company's profit</li>
+    <li>🌍 Operate across CIS & Asia</li>
   </ul>
-  <img src="images/image3.png" alt="Partner Benefits" />
+  <img src="images/image3.png" alt="Benefits" />
 </section>
 
-<section>
+<section id="how">
   <h2>How It Works</h2>
-  <p>Register as a partner → Invite others → Grow your network → Earn passive income + receive real company shares!</p>
-  <img src="images/image4.png" alt="How It Works" />
+  <p>1. Sign up → 2. Invite friends → 3. Earn commissions → 4. Grow your team → 5. Receive company shares</p>
+  <img src="images/image4.png" alt="Steps" />
 </section>
 
 <div class="cta">
-  <a class="whatsapp-button" href="https://wa.me/77085080140" target="_blank">Chat on WhatsApp</a>
+  <a class="whatsapp-button" href="https://wa.me/77085080140" target="_blank">
+    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+  </a>
 </div>
 
-<div class="form-section">
+<div class="form-section" id="form">
   <h2>Register Now</h2>
   <form>
     <input type="text" placeholder="First Name" required />
@@ -204,7 +204,11 @@
 </div>
 
 <footer>
-  &copy; 2025 Lemon Mall. All rights reserved.
+  <p>&copy; 2025 Lemon Mall. All rights reserved.</p>
+  <div class="footer-links">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Use</a>
+  </div>
 </footer>
 
 </body>
