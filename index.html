@@ -1,79 +1,167 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lemon Mall</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background-color: #f5e050;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 32px;
-        }
-        section {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        h2 {
-            color: #222;
-        }
-        a.button {
-            display: inline-block;
-            padding: 12px 20px;
-            background-color: #f5e050;
-            color: #000;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            font-weight: bold;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #eee;
-            margin-top: 40px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lemon Mall</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fffef8;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(135deg, #fbe84b, #fff7c2);
+      text-align: center;
+      padding: 80px 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 20px;
+      color: #555;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    section img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 30px 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    p, ul {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 60px 0;
+    }
+
+    .cta a {
+      background-color: #f5e050;
+      color: #000;
+      text-decoration: none;
+      padding: 16px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+
+    .cta a:hover {
+      background-color: #e5d12f;
+    }
+
+    footer {
+      background: #f5f5f5;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+      color: #888;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 36px;
+      }
+
+      h2 {
+        font-size: 26px;
+      }
+
+      p, ul {
+        font-size: 16px;
+      }
+
+      .cta a {
+        font-size: 16px;
+        padding: 14px 24px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Lemon Mall</h1>
-        <p>The Official International Marketplace</p>
-    </header>
-    <section>
-        <h2>What is Lemon Mall?</h2>
-        <p>Lemon Mall is a modern and convenient trading platform that offers high-quality products at competitive prices. We deliver directly from manufacturers in China and CIS countries.</p>
 
-        <h2>Who We Are</h2>
-        <p>HUAGE is a marketing company officially representing the Chinese corporation Baishi Health, operating since 2009. With 6 factories and R&D centers, Baishi Health produces over 1,000 premium products in the fields of health, cosmetics, and everyday goods.</p>
+<header>
+  <h1>Welcome to Lemon Mall</h1>
+  <p>Your Gateway to Smart Shopping & Lucrative Partnerships</p>
+</header>
 
-        <h2>Why Become a Partner?</h2>
-        <ul>
-            <li>Earn up to 3% from purchases made through your personal referral link.</li>
-            <li>Open local delivery points after reaching certain levels.</li>
-            <li>Get a share of Lemon Mall's profit — up to 49% of the marketplace's profit is distributed among partners.</li>
-        </ul>
+<section>
+  <h2>What is Lemon Mall?</h2>
+  <p>Lemon Mall is a modern online marketplace offering a wide range of high-quality products directly from manufacturers in China and the CIS region — all at prices below traditional retail.</p>
+  <img src="images/image1.png" alt="Lemon Mall Intro" />
+</section>
 
-        <h2>Join Us</h2>
-        <p>We invite you to join our partner program and grow your financial future together with Lemon Mall and HUAGE.</p>
+<section>
+  <h2>Who We Are</h2>
+  <p>We are HUAGE — the official marketing partner of Baishi Health Corporation (China), operating since 2009. With 6 factories and research centers, Baishi Health delivers over 1,000 premium health and lifestyle products worldwide.</p>
+  <img src="images/image2.png" alt="About Baishi Health" />
+</section>
 
-        <a class="button" href="https://wa.me/77085080140" target="_blank">Contact Us on WhatsApp</a>
-    </section>
-    <footer>
-        &copy; 2025 Lemon Mall. All rights reserved.
-    </footer>
+<section>
+  <h2>Why Become a Partner?</h2>
+  <ul>
+    <li>Earn up to 3% from purchases made through your personal referral link.</li>
+    <li>Open official delivery points as you grow in status.</li>
+    <li>Get shares in Lemon Mall's profits — up to 49% of marketplace revenue is shared with partners.</li>
+  </ul>
+  <img src="images/image3.png" alt="Partner Benefits" />
+</section>
+
+<section>
+  <h2>How It Works</h2>
+  <p>Register as a partner → Invite others → Grow your network → Earn passive income + receive real company shares!</p>
+  <img src="images/image4.png" alt="How It Works" />
+</section>
+
+<div class="cta">
+  <a href="https://wa.me/77085080140" target="_blank">Join via WhatsApp</a>
+</div>
+
+<footer>
+  &copy; 2025 Lemon Mall. All rights reserved.
+</footer>
+
 </body>
 </html>
